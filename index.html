@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vuvtdhh</title>
+</head>
+<body>
+    <p style="margin: 100px auto 20px auto; text-align: center;"><strong>Trang web đang trong quá trình cập nhật.</strong></p>
+    <p style="margin: 0 auto; text-align: center;">
+        <span>Chuyển hướng trong: </span>
+        <span id="redirect-countdown"></span>
+        <span></span>
+    </p>
+    <script>
+        let seconds = 5;
+        let redirectCountdown = document.getElementById("redirect-countdown");
+        function countdownAndRedirect() {
+            if (seconds < 0) {
+                window.location.replace("https://www.linkedin.com/in/vuvtdhh/");
+            } else {
+                redirectCountdown.innerText = seconds + "(s)";
+                window.setTimeout("countdownAndRedirect()", 1000);
+            }
+            seconds = seconds - 1;
+        }
+        countdownAndRedirect();
+    </script>
+</body>
+</html>
