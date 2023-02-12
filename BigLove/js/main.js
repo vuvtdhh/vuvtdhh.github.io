@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
   setInterval(function () { olock() }, 1000);
   //document.querySelector("#anniversary").textContent = `From ${(myDate.getDate()>9)?myDate.getDate():"0"+myDate.getDate()}-${(myDate.getMonth()>8)?(myDate.getMonth()+1):"0"+(myDate.getMonth()+1)}-${myDate.getFullYear()}`;
   document.querySelector("#days span").textContent = Math.floor(Math.floor((new Date() - myDate) / 1000) / 60 / 60 / 24);
-  document.querySelector("audio").setAttribute("src", `https://raw.githubusercontent.com/vuvtdhh/vuvtdhh.github.io/gh-pages/BigLove/${music[Math.floor(Math.random() * music.length)]}.mp3`);
+  document.querySelector("audio").setAttribute("src", `https://raw.githubusercontent.com/vuvtdhh/vuvtdhh.github.io/gh-pages/BigLove/music/${music[Math.floor(Math.random() * music.length)]}.mp3`);
 
   document.querySelector("#heart").addEventListener("click", function (e) {
     document.querySelector("#question-modal").style.display = "block";
