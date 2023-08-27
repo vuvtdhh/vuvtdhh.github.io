@@ -7,6 +7,7 @@ categories:
 - showcase
 thumbnailImagePosition: left
 thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg
+draft: true
 ---
 
 Here you can find a list of the blogs that use Tranquilpeak theme, with different styles and customizations.

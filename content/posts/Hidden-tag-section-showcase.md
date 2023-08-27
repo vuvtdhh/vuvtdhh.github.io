@@ -9,6 +9,7 @@ categories:
 tags:
 - tags
 showTags: false
+draft: true
 ---
 
 This post is used to show how a site looks if the tag section is hidden.

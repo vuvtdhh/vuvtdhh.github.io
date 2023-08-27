@@ -9,6 +9,7 @@ categories:
 tags:
 - social
 showSocial: false
+draft: true
 ---
 
 This post is used to show how a site looks if the social section is hidden.

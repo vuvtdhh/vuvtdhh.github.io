@@ -9,6 +9,7 @@ tags:
 - chinese
 thumbnailImagePosition: left
 thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/chinese-test-post/vintage-140.jpg
+draft: true
 ---
 
 This is a chinese test post to show you how chinese is displayed.
