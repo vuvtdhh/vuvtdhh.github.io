@@ -18,7 +18,7 @@ defaultContentLanguage = "vi"
 title = "Vũ Văn"
 theme = "tranquilpeak"
 disqusShortname = "hugo-tranquilpeak-theme"
-# googleAnalytics = "UA-123-45"
+# googleAnalytics = "G-YPX3CDSYBK"
 paginate = 7
 canonifyurls = true
 
@@ -349,7 +349,7 @@ canonifyurls = true
   [params.comment]
     [params.comment.disqus]
       enable = true
-      shortname = "hugo-tranquilpeak-theme"
+      shortname = "vuvtdhh"
     [params.comment.gitalk]
       enable = false
       # clientId =
