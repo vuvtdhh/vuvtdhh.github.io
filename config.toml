@@ -17,8 +17,8 @@ languageCode = "en-us"
 defaultContentLanguage = "vi"
 title = "Vũ Văn"
 theme = "tranquilpeak"
-disqusShortname = "hugo-tranquilpeak-theme"
-# googleAnalytics = "G-YPX3CDSYBK"
+disqusShortname = "vuvtdhh"
+googleAnalytics = "G-YPX3CDSYBK"
 paginate = 7
 canonifyurls = true
 
