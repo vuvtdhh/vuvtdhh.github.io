@@ -97,7 +97,7 @@ canonifyurls = true
   identifier = "github"
   name = "GitHub"
   pre = "<i class=\"sidebar-button-icon fab fa-lg fa-github\" aria-hidden=\"true\"></i>"
-  url = "https://github.com/vuvtdhh/"
+  url = "https://github.com/vuvtdhh"
 [[menu.links]]
   weight = 2
   identifier = "stackoverflow"
@@ -383,4 +383,4 @@ canonifyurls = true
   # --------------------
   # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
     [params.footer]
-      copyright = "<a href=\"https://github.com/vuvtdhh\">Vũ Văn</a>"
+      copyright = "<a href=\"https://github.com/vuvtdhh">Vũ Văn</a>"
