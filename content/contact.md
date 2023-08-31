@@ -16,9 +16,7 @@ keywords:
 - Vũ Văn Github
 title: "Liên hệ tôi"
 ---
-Bạn có thể liên hệ với tôi qua [email][], 
-<br />tham khảo hồ sơ của tôi tại [LinkedIn][],  
-<br />cũng như cập nhật các tin tức của tôi trên [Blog][], [GitHub][].
+Bạn có thể liên hệ với tôi qua [email][], tham khảo hồ sơ của tôi tại [LinkedIn][], cũng như cập nhật các tin tức của tôi trên [Blog][], [GitHub][].
 
 
 
