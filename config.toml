@@ -349,7 +349,7 @@ canonifyurls = true
   [params.comment]
     [params.comment.disqus]
       enable = true
-      shortname = "vuvtdhh"
+      # shortname = "vuvtdhh"
     [params.comment.gitalk]
       enable = false
       # clientId =
