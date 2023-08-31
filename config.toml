@@ -348,6 +348,7 @@ canonifyurls = true
   # --------------
   [params.comment]
     [params.comment.disqus]
+      enable = true
 
     [params.comment.gitalk]
       enable = false
