@@ -45,7 +45,7 @@ canonifyurls = true
 # ------
 [author]
   name = "Vũ Văn"
-  bio = "Edelweiss."
+  bio = "🌦️"
   job = "Developer"
   location = "Saigon"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
@@ -56,7 +56,7 @@ canonifyurls = true
   # Your Twitter username without the @. E.g : thibaudlepretre
   # twitter = "thibaudlepretre"
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
-  # googlePlus = "+ThibaudLepretre"
+  # googlePlus = ""
 
 # ------------
 # Sidebar menu
@@ -97,13 +97,13 @@ canonifyurls = true
   identifier = "github"
   name = "GitHub"
   pre = "<i class=\"sidebar-button-icon fab fa-lg fa-github\" aria-hidden=\"true\"></i>"
-  url = "https://github.com/vuvtdhh"
+  url = "https://github.com/vuvtdhh/"
 [[menu.links]]
   weight = 2
   identifier = "stackoverflow"
   name = "Stack Overflow"
   pre = "<i class=\"sidebar-button-icon fab fa-lg fa-stack-overflow\" aria-hidden=\"true\"></i>"
-  url = "https://stackoverflow.com/users/20150386/huy-vu"
+  url = "https://stackoverflow.com/users/20150386/"
 
 [[menu.misc]]
   weight = 1
@@ -119,7 +119,7 @@ canonifyurls = true
   # -----------
   # Description
   # -----------
-  description = "Hugo tranquilpeak theme demo"
+  description = "Vũ Văn's blog."
 
   # ------------------
   # Syntax highlighter
@@ -141,7 +141,7 @@ canonifyurls = true
   # Posts related configuration
   # ---------------------------
   # Global keywords configuration. Following keywords will be add to every pages
-  #  keywords = ["development", "next-gen"]
+    keywords = ["vuvtdhh"]
 
   # Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. (true: enable, false: disable)
   clearReading = true
@@ -185,7 +185,7 @@ canonifyurls = true
   # Current image is on AWS S3 and delivered by AWS CloudFront.
   # Otherwise put your image, for example `cover.jpg` in folder `static/images/`,
   # and use relative url : `images/cover.jpg`
-  coverImage = "images/cover.jpg"
+  coverImage = "images/cover.jpeg"
 
   # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
   imageGallery = true
@@ -383,4 +383,4 @@ canonifyurls = true
   # --------------------
   # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
     [params.footer]
-      copyright = "<a href=\"https://github.com/vuvtdhh\">vuvtdhh</a>"
+      copyright = "<a href=\"https://github.com/vuvtdhh\">Vũ Văn</a>"
