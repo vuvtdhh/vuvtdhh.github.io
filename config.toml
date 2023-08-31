@@ -348,7 +348,7 @@ canonifyurls = true
   # --------------
   [params.comment]
     [params.comment.disqus]
-      enable = true
+      # enable = true
       # shortname = "vuvtdhh"
     [params.comment.gitalk]
       enable = false
