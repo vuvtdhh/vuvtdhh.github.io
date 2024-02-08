@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         html,
         body {
             margin: 0;
@@ -87,6 +91,7 @@
         .jump {
             animation: 1s jump infinite alternate;
         }
+
         .jumped {
             animation: 1s jumped infinite alternate;
         }
@@ -201,17 +206,20 @@
                 <img style="width: 40vw; display: inline-block;" src="images/bubu-xoay-dudu.gif" title="Bubu xoay Dudu">
             </div>
         </div>
-        
+
         <div id="mo-qua" style="position: relative;">
-            <div id="loi-chuc" class="speech-bubble" style="position: absolute; bottom: 80%;">
-                <p>Chúc mừng Bé đã nhận được một nụ hun nồng thắm từ Bự Cưng và một Giấy phép chưi náck có giá trị vô thời hạn!</p>
-                <p style="margin-top: .5rem;">Ngoài nụ hun nồng thắm và Giấy phép chưi náck ra, Bự cưng cũng có chuẩn bị những lời chúc và <a href="#chuc-mung">lì xì</a> cho Bé!</p>
+            <div id="loi-chuc" class="speech-bubble" style="position: absolute; bottom: 80%; display: none;">
+                <p>Chúc mừng Bé đã nhận được một nụ hun nồng thắm từ Bự Cưng và một Giấy phép chưi náck có giá trị vô
+                    thời hạn!</p>
+                <p style="margin-top: .5rem;">Ngoài nụ hun nồng thắm và Giấy phép chưi náck ra, Bự cưng cũng có chuẩn bị
+                    những lời chúc và <a href="#chuc-mung">lì xì</a> cho Bé!</p>
             </div>
             <img style="width: 50vw; position: absolute; bottom: 50%; transform: translateY(50%); z-index: -1; display: none;"
                 id="dudu" src="images/dudu-tang-hoa-2.gif" title="Dudu">
             <img class="move" id="lid" src="images/box-lid.png" title="Box lid">
             <img style="cursor: pointer;" id="box" src="images/box.png" title="Box">
-            <img id="chui-nack" style="margin-top: 5rem; position: absolute; bottom: 10%; display: none;" src="images/chui-nack-license.png" title="Chui nack license">
+            <img id="chui-nack" style="margin-top: 5rem; position: absolute; bottom: 10%; display: none;"
+                src="images/chui-nack-license.png" title="Chui nack license">
         </div>
         <div id="chuc-mung">
             <div class="speech-bubble">
@@ -242,19 +250,21 @@
         let chuiNack = document.getElementById("chui-nack");
         let clicked = false;
         box.addEventListener("click", function () {
-            if(clicked){
+            if (clicked) {
                 lid.classList.remove("rotating");
                 dudu.style.display = "none";
                 dudu.classList.remove("jump");
+                loiChuc.style.display = "none";
                 lid.classList.remove("rotated");
                 chuiNack.style.display = "none";
                 clicked = false;
             } else {
                 clicked = true;
                 lid.classList.add("rotating");
-                setTimeout(function(){
+                setTimeout(function () {
                     dudu.style.display = "block";
                     dudu.classList.add("jump");
+                    loiChuc.style.display = "block";
                     lid.classList.add("rotated");
                     chuiNack.style.display = "block";
                 }, 300);
