@@ -177,7 +177,7 @@
                 <p>Bự vẫn luôn cố gắng phát triển bản thân để trở thành phiên bản Bự Cưng xịn hơn của Bé.</p>
                 <p style="margin-top: .5rem;">Bé cùng <a href="#phat-trien">cố gắng</a> với Bự nha!</p>
                 <p style="text-align: right; margin-right: 1rem;">Ký tên</p>
-                <p style="text-align: right; margin-right: 1.75rem;">Bự</p>
+                <p style="text-align: right; margin-right: .65rem;">Bự Cưng</p>
             </div>
             <img src="images/dudu-tha-tim.gif" title="Dudu tha tim">
             <audio style="width: 50vw; height: 20px;" loop autoplay controls src="music/Ngay xuan long phung sum vay.mp3">Your browser does not support the audio element.</audio>
@@ -218,8 +218,10 @@
                 id="dudu" src="images/dudu-tang-hoa-2.gif" title="Dudu">
             <img class="move" id="lid" src="images/box-lid.png" title="Box lid">
             <img style="cursor: pointer;" id="box" src="images/box.png" title="Box">
-            <img id="chui-nack" style="margin-top: 5rem; position: absolute; bottom: 10%; display: none;"
+            <img id="chui-nack" style="position: absolute; bottom: 50vw; display: none;"
                 src="images/chui-nack-license.png" title="Chui nack license">
+            <img id="chui-ke" style="position: absolute; bottom: 10vw; display: none;"
+            src="images/chui-ke-license.png" title="Chui ke license">
         </div>
         <div id="chuc-mung">
             <div class="speech-bubble">
@@ -248,6 +250,7 @@
         let lid = document.getElementById("lid");
         let box = document.getElementById("box");
         let chuiNack = document.getElementById("chui-nack");
+        let chuiKe = document.getElementById("chui-ke");
         let clicked = false;
         box.addEventListener("click", function () {
             if (clicked) {
@@ -257,6 +260,7 @@
                 loiChuc.style.display = "none";
                 lid.classList.remove("rotated");
                 chuiNack.style.display = "none";
+                chuiKe.style.display = "none";
                 clicked = false;
             } else {
                 clicked = true;
@@ -267,6 +271,7 @@
                     loiChuc.style.display = "block";
                     lid.classList.add("rotated");
                     chuiNack.style.display = "block";
+                    chuiKe.style.display = "block";
                 }, 300);
             }
         });
