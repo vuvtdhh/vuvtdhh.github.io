@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bự ♥ Bé</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="icon" href="../big-love/images/heart.png">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #E74C3C;
+        }
+
+        #mo-dau,
+        #phat-trien,
+        #chuc-mung,
+        #mo-qua {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            font-family: 'Patrick Hand', cursive;
+        }
+
+        .speech-bubble {
+            position: relative;
+            background-color: #fff;
+            border: 2px solid #000;
+            padding: 10px;
+            border-radius: 10px;
+            width: 75vw;
+        }
+
+        .speech-bubble:before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -10px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: #000 transparent transparent transparent;
+        }
+
+        .speech-bubble p {
+            margin: 0;
+        }
+
+        /*  */
+
+        .box {
+            background: transparent;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            bottom: 0;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .box img {
+            margin: -5px;
+        }
+
+        .kuku {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            bottom: 0;
+            z-index: -1;
+        }
+
+        .jump {
+            animation: 1s jump infinite alternate;
+        }
+
+        .jumped {
+            animation: 1s jumped infinite alternate;
+        }
+
+        .move {
+            animation: 1s wiggle infinite linear;
+        }
+
+        .rotating {
+            animation: 1s rotating;
+        }
+
+        .rotated {
+            transform: rotate(145deg) translate(-70%, -170px);
+        }
+
+        @keyframes wiggle {
+
+            10%,
+            90% {
+                transform: translate3d(-1px, 0, 0);
+            }
+
+            20%,
+            80% {
+                transform: translate3d(2px, 0, 0);
+            }
+
+            30%,
+            50%,
+            70% {
+                transform: translate3d(-4px, 0, 0);
+            }
+
+            40%,
+            60% {
+                transform: translate3d(4px, 0, 0);
+            }
+        }
+
+        @keyframes rotating {
+            0% {
+                transform: rotate(0deg) translate(-50%, 0);
+            }
+
+            100% {
+                transform: rotate(145deg) translate(-70%, -170px);
+            }
+        }
+
+        @keyframes jump {
+            from {
+                bottom: 60%;
+            }
+
+            to {
+                bottom: 70%;
+            }
+        }
+
+        /*  */
+        img {
+            max-width: 50vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img style="position: absolute; width: 40vw;" src="images/hoa-mai.png" title="Hoa mai">
+        <img style="position: absolute; right: 0; width: 40vw;" src="images/hoa-dao.png" title="Hoa dao">
+        <img style="position: absolute; bottom: 0; width: 40vw;" src="images/banh-chung.png" title="Hoa mai">
+        <img style="position: absolute; bottom: 0; right: 0; width: 40vw;" src="images/banh-tet-dua-hau.png"
+            title="Hoa dao">
+        <div id="mo-dau">
+            <div class="speech-bubble">
+                <p>Hi Bé Cưng, là Bự đây!</p>
+                <p style="margin-top: .5rem;">Vậy là chúng ta đã bên nhau được một năm rồi...</p>
+                <p>Một năm với nhiều khoảnh khắc đáng nhớ, những niềm vui, cũng có những giọt nước mắt, và hơn hết là
+                    tình cảm dành cho nhau.</p>
+                <p>Trong mỗi khoảnh khắc đó, Bự luôn cảm thấy hạnh phúc và trân trọng vì có Bé bên cạnh.</p>
+                <p style="margin-top: .5rem;">Chặng đường phía trước vẫn còn dài...</p>
+                <p>Bự vẫn luôn cố gắng phát triển bản thân để trở thành phiên bản Bự Cưng xịn hơn của Bé.</p>
+                <p style="margin-top: .5rem;">Bé cùng <a href="#phat-trien">cố gắng</a> với Bự nha!</p>
+                <p style="text-align: right; margin-right: 1rem;">Ký tên</p>
+                <p style="text-align: right; margin-right: .65rem;">Bự Cưng</p>
+            </div>
+            <img src="images/dudu-tha-tim.gif" title="Dudu tha tim">
+            <audio style="width: 50vw; height: 20px;" loop autoplay controls src="music/Ngay xuan long phung sum vay.mp3">Your browser does not support the audio element.</audio>
+        </div>
+        <div id="phat-trien">
+            <div class="speech-bubble">
+                <p>Bự iu Bé, chóc chóc chóc...</p>
+                <p style="margin-top: .5rem;">Bé Cưng <a href="#mo-qua">mở quà</a> hoi!</p>
+            </div>
+            <div>
+                <img style="width: 45vw; display: inline-block;" src="images/dudu-gap-bung.gif" title="Dudu gap bung">
+                <img style="width: 45vw; display: inline-block;" src="images/bubu-gap-bung.gif" title="Bubu gap bung">
+            </div>
+            <div style="margin-top: 1rem;">
+                <img style="width: 40vw; display: inline-block;" src="images/dudu-chay-bo.gif" title="Dudu chay bo">
+                <img style="width: 40vw; display: inline-block;" src="images/bubu-chay-bo.gif" title="Bubu chay bo">
+            </div>
+            <div style="margin-top: 1rem;">
+                <img style="width: 40vw; display: inline-block;" src="images/bubu-dudu-di-dao.gif"
+                    title="Bubu Dudu di dao">
+                <img style="width: 40vw; display: inline-block;" src="images/dudu-tap-the-duc.gif"
+                    title="Dudu tap the duc">
+            </div>
+            <div style="margin-top: 1rem;">
+                <img style="width: 40vw; display: inline-block;" src="images/bubu-cuoi-dudu.gif" title="Bubu cuoi Dudu">
+                <img style="width: 40vw; display: inline-block;" src="images/bubu-xoay-dudu.gif" title="Bubu xoay Dudu">
+            </div>
+        </div>
+
+        <div id="mo-qua" style="position: relative;">
+            <div id="loi-chuc" class="speech-bubble" style="position: absolute; bottom: 80%; display: none;">
+                <p>Chúc mừng Bé đã nhận được một nụ hun nồng thắm từ Bự Cưng, một Giấy phép chưi náck có giá trị vô
+                    thời hạn và một Giấy phép chùi ke không giới hạn có giá trị vô thời hạn!</p>
+                <p style="margin-top: .5rem;">Ngoài nụ hun nồng thắm và hai loại Giấy phép ra, Bự Cưng cũng có chuẩn bị
+                    những <a href="#chuc-mung">lời chúc</a> và lì xì cho Bé! Lì xì Bé đợi gặp Bự Cưng nho!</p>
+            </div>
+            <img style="width: 50vw; position: absolute; bottom: 50%; transform: translateY(50%); z-index: -1; display: none;"
+                id="dudu" src="images/dudu-tang-hoa-2.gif" title="Dudu">
+            <img class="move" id="lid" src="images/box-lid.png" title="Box lid">
+            <img style="cursor: pointer;" id="box" src="images/box.png" title="Box">
+            <img id="chui-nack" style="position: absolute; bottom: 50vw; display: none;"
+                src="images/chui-nack-license.png" title="Chui nack license">
+            <img id="chui-ke" style="position: absolute; bottom: 15vw; display: none;"
+            src="images/chui-ke-license.png" title="Chui ke license">
+        </div>
+        <div id="chuc-mung">
+            <div class="speech-bubble">
+                <p>Nhân dịp năm mới,</p>
+                <p>Bự chúc Bé Cưng dồi dào năng lượng, ngày càng xinh đẹp hơn, thành công trong mọi việc và luôn
+                    luôn vui vẻ!</p>
+                <p>Bé Cưng nhăm nhìu dô nho!</p>
+                <p>Bự Cưng luôn bên cạnh bé!</p>
+            </div>
+            <img style="width: 40vw;" src="images/dudu-chuc-mung.gif" title="Dudu tha tim">
+            <div>
+                <img style="width: 40vw; display: inline-block;" src="images/dudu-li-xi.gif" title="Dudu li xi">
+                <img style="width: 40vw; display: inline-block;" src="images/dudu-li-xi-1.gif" title="Dudu li xi">
+            </div>
+            <div>
+                <img style="width: 40vw; display: inline-block;" src="images/bubu-dudu-an-1.gif" title="Bubu Dudu an">
+                <img style="width: 40vw; display: inline-block;" src="images/dudu-tang-hoa-bubu-1.gif"
+                    title="Dudu tang hoa Bubu">
+            </div>
+            <p>From Bự Cưng with love ♥</p>
+        </div>
+    </div>
+    <script>
+        let loiChuc = document.getElementById("loi-chuc");
+        let dudu = document.getElementById("dudu");
+        let lid = document.getElementById("lid");
+        let box = document.getElementById("box");
+        let chuiNack = document.getElementById("chui-nack");
+        let chuiKe = document.getElementById("chui-ke");
+        let clicked = false;
+        box.addEventListener("click", function () {
+            if (clicked) {
+                lid.classList.remove("rotating");
+                dudu.style.display = "none";
+                dudu.classList.remove("jump");
+                loiChuc.style.display = "none";
+                lid.classList.remove("rotated");
+                chuiNack.style.display = "none";
+                chuiKe.style.display = "none";
+                clicked = false;
+            } else {
+                clicked = true;
+                lid.classList.add("rotating");
+                setTimeout(function () {
+                    dudu.style.display = "block";
+                    dudu.classList.add("jump");
+                    loiChuc.style.display = "block";
+                    lid.classList.add("rotated");
+                    chuiNack.style.display = "block";
+                    chuiKe.style.display = "block";
+                }, 300);
+            }
+        });
+    </script>
+</body>
+
+</html>
